@@ -95,7 +95,6 @@ h6 {
   .programs-rows2 {
     display: grid;
   }
-  
 }
 
 /* 'md': '768px', */
@@ -816,7 +815,7 @@ header {
   text-decoration: none;
 }
 
-.column1 p{
+.column1 p {
   margin-top: 1rem;
 }
 
@@ -825,20 +824,20 @@ header {
   gap: 4.5rem;
 }
 
-.footer-column{  
+.footer-column {
   color: #ffffff;
   line-height: 30px;
   cursor: pointer;
 }
 
-.footer-column h2{
+.footer-column h2 {
   color: #ec7e45;
   cursor: pointer;
   border-bottom: 1px solid transparent;
-  transition: all .55s ease;
+  transition: all 0.55s ease;
 }
 
-.footer-column h2:hover{
-  border-bottom: 1px solid #ec7e45;;
-  transition: all .55s ease;
+.footer-column h2:hover {
+  border-bottom: 1px solid #ec7e45;
+  transition: all 0.55s ease;
 }
