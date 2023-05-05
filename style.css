@@ -189,7 +189,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 48px 70px 0px 70px;
+  padding: 10px 70px 0px 70px;
+  background: linear-gradient(260.75deg, #ffac58 -19.54%, #f07800 108.38%);
 }
 
 .navlist {
@@ -198,7 +199,7 @@ header {
 
 .navlist a {
   color: white;
-  font-size: 15px;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-left: 48px;
   opacity: 0.5;
@@ -207,7 +208,7 @@ header {
 }
 
 .navlist a:hover {
-  border-bottom: 2px solid #ea7f60;
+  border-bottom: 2px solid #3d0f02;
   opacity: 1;
 }
 
@@ -217,6 +218,8 @@ header {
   font-size: 24px;
   line-height: 29px;
   padding: 16px 24px 15px 24px;
+  border-radius: 50px;
+  border: 1px solid transparent;
 }
 
 .joinnow-button:hover {
