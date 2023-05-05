@@ -164,14 +164,18 @@ h6 {
 
 #background {
   height: 100%;
-  width: 100%;
-  max-width: 1440px;
+  /* width: 100%; */
+  /* max-width: 1440px; */
   min-height: 100vh;
   position: relative;
   /* display: grid; */
   align-items: center;
   gap: 2rem;
   background: #2e3338;
+}
+
+.hero-container {
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -344,6 +348,11 @@ header {
 #programs {
   height: 58rem;
   background: #2e3338;
+}
+
+.programs-container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .program1-row1 {
@@ -541,6 +550,11 @@ header {
   background: #2e3338;
 }
 
+.pricing-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .pricing-row1 {
   display: grid;
   justify-content: center;
@@ -676,6 +690,11 @@ header {
   align-items: center;
 }
 
+.about-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .about-row1 {
   width: 81rem;
   height: 31rem;
@@ -792,6 +811,11 @@ header {
 }
 
 .footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-container-row {
   display: flex;
   width: 69rem;
   height: 12.75rem;
