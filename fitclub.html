@@ -7,6 +7,10 @@
     <title>The Fitclub</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
@@ -22,23 +26,23 @@
     />
   </head>
   <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="img/logo/Frame 13804.png" alt="Logo" />
+      </a>
+      <ul class="navlist">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+      <!-- <div class="bx bx-menu" id="menu-icon"></div> -->
+      <button class="joinnow-button">Join Now</button>
+    </header>
     <main class="container" id="background">
       <section id="hero">
         <div class="hero-container">
-          <header>
-            <a href="#" class="logo">
-              <img src="img/logo/Frame 13804.png" alt="Logo" />
-            </a>
-            <ul class="navlist">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Community</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-            <button class="joinnow-button">Join Now</button>
-          </header>
-          <div class="hero-contents">
-            <div class="bg-eclips">
+          <div class="bg-eclips">
               <img src="img/Ellipse 51.png" alt="" />
             </div>
             <div class="bg-circles">
@@ -53,6 +57,7 @@
             <div class="bg-calories">
               <img src="img/calories.png" alt="" />
             </div>
+          <div class="hero-contents">
             <div class="row1">
               <h5><span>The best</span> fitness club in the town</h5>
             </div>
@@ -96,114 +101,57 @@
               <span>Explore our</span> program <span>to shape your body</span>
             </p>
           </div>
+
           <div class="program2-row2">
-            <div class="programs-column1 col-md-3">
-              <div class="card2">
-                <div class="column-content">
-                  <img src="img/icons/fitness.png" alt="Strength Training" />
-                  <img
-                    src="img/icons/fitness-white.png"
-                    alt="Strength Training"
-                  />
-                  <h3>Strength Training</h3>
-                  <p>
-                    In this program, you are trained to improve your strength
-                    through many exercises.
-                  </p>
-                  <h4 class="joinNow">
-                    Join Now<img
-                      src="img/icons/ant-design_arrow-down-outlined.png"
-                      alt="arrow"
-                    />
-                    <img
-                      src="img/icons/ant-design_arrow-down-outlined.png"
-                      alt="arrow"
-                    />
-                  </h4>
-                </div>
+            <div class="card2">
+              <div class="column-content">
+                <img src="img/icons/fitness.png" alt="Strength Training" />
+                <img src="img/icons/fitness-white.png" alt="Strength Training" />
+                <h3>Strength Training</h3>
+                <p>In this program, you are trained to improve your strength through many exercises.</p>
+                <h4 class="joinNow">Join Now<img src="img/icons/ant-design_arrow-down-outlined.png" alt="arrow" />
+                  <img src="img/icons/ant-design_arrow-down-outlined.png" alt="arrow" />
+                </h4>
               </div>
             </div>
-            <div class="programs-column2">
-              <div class="card2">
-                <div class="column-content">
-                  <img src="img/icons/run.png" alt="Strength Training" />
-                  <img src="img/icons/run-white.png" alt="Strength Training" />
-                  <h3>Cardio Training</h3>
-                  <p>
-                    In cardio training program you are trained to do sequential
-                    moves in range of 20 until 30 minutes.
-                  </p>
-                  <h4 class="joinNow">
-                    Join Now<img
-                      src="img/icons/ant-design_arrow-down-outlined.png"
-                      alt="arrow"
-                    />
-                    <img
-                      src="img/icons/ant-design_arrow-down-outlined.png"
-                      alt="arrow"
-                    />
-                  </h4>
-                </div>
+
+            <div class="card2">
+              <div class="column-content">
+                <img src="img/icons/run.png" alt="Strength Training" />
+                <img src="img/icons/run-white.png" alt="Strength Training" />
+                <h3>Cardio Training</h3>
+                <p>In cardio training program you are trained to do sequential moves in range of 20 until 30 minutes.</p>
+                <h4 class="joinNow">Join Now<img src="img/icons/ant-design_arrow-down-outlined.png" alt="arrow" />
+                  <img src="img/icons/ant-design_arrow-down-outlined.png" alt="arrow" />
+                </h4>
               </div>
             </div>
-            <div class="programs-column3">
-              <div class="card2">
-                <div class="column-content">
-                  <img src="img/icons/flame.png" alt="Strength Training" />
-                  <img
-                    src="img/icons/flame-white.png"
-                    alt="Strength Training"
-                  />
-                  <h3>Fat Burning</h3>
-                  <p>
-                    This program is suitable for you who wants to get rid of
-                    your fats and lose their weight.
-                  </p>
-                  <h4 class="joinNow">
-                    Join Now<img
-                      src="img/icons/ant-design_arrow-down-outlined.png"
-                      alt="arrow"
-                    />
-                    <img
-                      src="img/icons/ant-design_arrow-down-outlined.png"
-                      alt="arrow"
-                    />
-                  </h4>
-                </div>
+
+            <div class="card2">
+              <div class="column-content">
+                <img src="img/icons/flame.png" alt="Strength Training" />
+                <img src="img/icons/flame-white.png" alt="Strength Training" />
+                <h3>Fat Burning</h3>
+                <p>This program is suitable for you who wants to get rid of your fats and lose their weight.</p>
+                <h4 class="joinNow">Join Now<img src="img/icons/ant-design_arrow-down-outlined.png" alt="arrow" />
+                  <img src="img/icons/ant-design_arrow-down-outlined.png" alt="arrow" />
+                </h4>
               </div>
             </div>
-            <div class="programs-column4">
-              <div class="card2">
-                <div class="column-content">
-                  <img
-                    src="img/icons/heart-attack.png"
-                    alt="Strength Training"
-                  />
-                  <img
-                    src="img/icons/heart-attack-white.png"
-                    alt="Strength Training"
-                  />
-                  <h3>Health Fitness</h3>
-                  <p>
-                    This program is designed for those who exercises only for
-                    their body fitness not body building.
-                  </p>
-                  <h4 class="joinNow">
-                    Join Now<img
-                      src="img/icons/ant-design_arrow-down-outlined.png"
-                      alt="arrow"
-                    />
-                    <img
-                      src="img/icons/ant-design_arrow-down-outlined.png"
-                      alt="arrow"
-                    />
-                  </h4>
-                </div>
+
+            <div class="card2">
+              <div class="column-content">
+                <img src="img/icons/heart-attack.png" alt="Strength Training" />
+                <img src="img/icons/heart-attack-white.png" alt="Strength Training" />
+                <h3>Health Fitness</h3>
+                <p>This program is designed for those who exercises only for their body fitness not body building.</p>
+                <h4 class="joinNow">Join Now<img src="img/icons/ant-design_arrow-down-outlined.png" alt="arrow" />
+                  <img src="img/icons/ant-design_arrow-down-outlined.png" alt="arrow" />
+                </h4>
               </div>
             </div>
-            <div class="programs-column"></div>
-            <div class="programs-column"></div>
           </div>
+
           <div class="program3-row3">
             <div class="program3-column1">
               <div class="cell cell-1"></div>
@@ -250,7 +198,7 @@
           <div class="pricing-row2">
             <div class="pricing-column">
               <div class="pricing-contents">
-                <img src="/img/icons/image 20 (Traced).png" alt="" />
+                <img src="img/icons/image 20 (Traced).png" alt="" />
                 <div class="plan-name">
                   <h3>Basic plan</h3>
                   <p>$25</p>
@@ -264,7 +212,7 @@
                   <p class="benefits">
                     <a href="#" class="benefit_link">See more benefits</a
                     ><img
-                      src="/img/icons/ant-design_arrow-down-outlined.png"
+                      src="img/icons/ant-design_arrow-down-outlined.png"
                       alt="arrow"
                     />
                   </p>
@@ -276,7 +224,7 @@
             </div>
             <div class="pricing-column">
               <div class="pricing-contents">
-                <img src="/img/icons/image 18 (Traced).png" alt="" />
+                <img src="img/icons/image 18 (Traced).png" alt="" />
                 <div class="plan-name">
                   <h3>Premium plan</h3>
                   <p>$30</p>
@@ -290,7 +238,7 @@
                   <p class="benefits">
                     <a href="#" class="benefit_link">See more benefits</a
                     ><img
-                      src="/img/icons/ant-design_arrow-down-outlined.png"
+                      src="img/icons/ant-design_arrow-down-outlined.png"
                       alt="arrow"
                     />
                   </p>
@@ -302,7 +250,7 @@
             </div>
             <div class="pricing-column">
               <div class="pricing-contents">
-                <img src="/img/icons/image 19 (Traced).png" alt="" />
+                <img src="img/icons/image 19 (Traced).png" alt="" />
                 <div class="plan-name">
                   <h3>Pro plan</h3>
                   <p>$45</p>
@@ -316,7 +264,7 @@
                   <p class="benefits">
                     <a href="#" class="benefit_link">See more benefits</a
                     ><img
-                      src="/img/icons/ant-design_arrow-down-outlined.png"
+                      src="img/icons/ant-design_arrow-down-outlined.png"
                       alt="arrow"
                     />
                   </p>
@@ -363,50 +311,50 @@
           </div>
         </div>
       </section>
-
-      <section id="footer">
-        <div class="footer-container">
-          <div class="footer-container-row">
-            <div class="column1">
-              <img src="img/logo/Frame 13804.png" alt="Logo" />
-              <p>
-                No. 1 Fitness Club in the town to help you shape your ideal
-                body.
-              </p>
-              <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-twitter"></a>
-              <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-youtube"></a>
+    </main>
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="footer-container-row">
+          <div class="column1">
+            <img src="img/logo/Frame 13804.png" alt="Logo" />
+            <p>
+              No. 1 Fitness Club in the town to help you shape your ideal body.
+            </p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-youtube"></a>
+          </div>
+          <div class="column-container">
+            <div class="footer-column">
+              <h2>Website</h2>
+              <p>About us</p>
+              <p>Programs</p>
+              <p>Community</p>
+              <p>News & Blog</p>
             </div>
-            <div class="column-container">
-              <div class="footer-column">
-                <h2>Website</h2>
-                <p>About us</p>
-                <p>Programs</p>
-                <p>Community</p>
-                <p>News & Blog</p>
-              </div>
-              <div class="footer-column">
-                <h2>Support</h2>
-                <p>FAQ</p>
-                <p>Support Center</p>
-                <p>Contact Us</p>
-              </div>
-              <div class="footer-column">
-                <h2>Pricing</h2>
-                <p>Basic Plan</p>
-                <p>Premiun Plan</p>
-                <p>Pro Plan</p>
-              </div>
-              <div class="footer-column">
-                <h2>Misc</h2>
-                <p>Terms & Conditions</p>
-                <p>Privacy Policy</p>
-              </div>
+            <div class="footer-column">
+              <h2>Support</h2>
+              <p>FAQ</p>
+              <p>Support Center</p>
+              <p>Contact Us</p>
+            </div>
+            <div class="footer-column">
+              <h2>Pricing</h2>
+              <p>Basic Plan</p>
+              <p>Premiun Plan</p>
+              <p>Pro Plan</p>
+            </div>
+            <div class="footer-column">
+              <h2>Misc</h2>
+              <p>Terms & Conditions</p>
+              <p>Privacy Policy</p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
   </body>
 </html>
