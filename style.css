@@ -236,7 +236,8 @@ header {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  padding: 16px 24px 15px 24px;
+  padding: 1rem;
+  margin-bottom: .5rem;
   border-radius: 50px;
   border: 1px solid transparent;
 }
@@ -259,7 +260,6 @@ header {
   padding-top: 2rem;
   padding-left: 1.5rem;
   position: relative;
-  border: 1px solid red;
 }
 
 .bg-rectangle {
@@ -268,7 +268,7 @@ header {
   top: 0;
 }
 
-.bg-rectangle img{
+.bg-rectangle img {
   height: 45rem;
   width: 25rem;
 }
@@ -309,12 +309,12 @@ header {
 .row1 {
   background: #393d42;
   border-radius: 6.25rem;
-  width: 19rem;
-  height: 3.5rem;
+  width: fit-content;
   padding: 1.25em;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 200;
+  padding: 1rem;
 }
 
 .row1 span {
@@ -361,6 +361,11 @@ header {
 
 .row4 p {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.row5 {
+  display: flex;
+  gap: 5rem;
 }
 
 .row5 button {
@@ -484,6 +489,13 @@ header {
   justify-content: space-evenly;
 }
 
+/* LIGHTBOX ------------------------------ */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(337px, 600px));
+  grid-gap: 30px;
+}
+
 .program3-column1 {
   width: 35rem;
   height: 28rem;
@@ -496,14 +508,32 @@ header {
 
 .cell {
   color: #ffffff;
-  font-size: 3rem;
-  text-align: center;
   cursor: pointer;
 }
 
-.cell:hover {
+.pexels:hover {
   background: linear-gradient(266.08deg, #ea7f60 -20.56%, #f07800 109.12%);
+  transform: scale(1.1);
+  transition: 1s ease;
   border: 1px solid white;
+}
+
+.pexels1 {
+  object-fit: cover;
+  transition: 1s ease;
+}
+.pexels2 {
+  object-fit: cover;
+  transition: 1s ease;
+}
+.pexels3 {
+  object-fit: cover;
+  transition: 1s ease;
+}
+
+.pexels4 {
+  object-fit: cover;
+  transition: 1s ease;
 }
 
 .cell-1 {
@@ -523,6 +553,7 @@ header {
 .cell-4 {
   background: #3a4045;
 }
+/* LIGHTBOX END ------------------------------ */
 
 .program3-column2 {
   width: 35rem;
@@ -687,13 +718,10 @@ header {
   margin-top: 1rem;
 }
 
-.plan-desc p {
-  opacity: 0.5;
-}
-
 .benefits {
   display: flex;
   margin-top: 1rem;
+  opacity: 0.5;
 }
 
 .benefits a {
@@ -711,9 +739,17 @@ header {
   padding: 0.8rem 6rem;
   font-size: 1rem;
   font-weight: 700;
-  color: #ffffff;
   background: transparent;
   border: 1px solid white;
+}
+
+.joinBtn a{
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.joinBtn:hover {
+  background: #ffffff;
 }
 
 /* ABOUT ---------------------------*/
@@ -899,7 +935,8 @@ header {
   border-bottom: 1px solid #ec7e45;
   transition: all 0.55s ease;
 }
-
+@media (max-width: 1440px) {
+}
 @media (max-width: 768px) {
   .bg-rectangle {
     display: none;
@@ -934,8 +971,8 @@ header {
     box-shadow: 0 0 2rem 0.3rem #5a5a5a;
     background: linear-gradient(260.75deg, #ffac58 -19.54%, #f07800 108.38%);
   }
-  #hero{
-    margin-top: 7px;
+  #hero {
+    margin-top: 58px;
   }
   .hero-container .hero-contents {
     justify-content: center;
@@ -954,12 +991,15 @@ header {
     margin: 0 auto;
   }
 
+  .row4 {
+    margin-top: 3rem;
+  }
   .row5 {
-    margin-top: 2rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-around;
   }
-  
+
   .navlist a {
     font-size: 1rem;
   }
@@ -971,8 +1011,13 @@ header {
   .programs-container {
     justify-content: center;
     align-items: center;
+  }
+
+  .programs-container .program1-row1 {
+    align-items: center;
     text-align: center;
   }
+
   .program1-row1 p {
     font-size: 3rem;
   }
@@ -985,6 +1030,13 @@ header {
     grid-template-rows: 1fr 1fr;
     padding: 0 2rem;
   }
-  .card2 {
+  .program3-row3 {
+    width: 100%;
+    height: auto;
+    display: grid;
+  }
+
+  .program3-column2 {
+    margin-top: 2rem;
   }
 }
