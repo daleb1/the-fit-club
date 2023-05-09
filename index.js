@@ -1,3 +1,12 @@
+// NAV BAR | HAMBURGER MENU
+hamburger = document.querySelector(".hamburger");
+hamburger.onclick = function(){
+    navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active");
+}
+
+
+// IMAGE PREVIEW |
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -24,24 +33,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-
-
-let menu = document.querySelector("#menu-icon");
-let navlist = document.querySelector(".navlist");
-
-menu.onclick = () => {
-  menu.classList.toggle("bx-x");
-  navlist.classList.toggle("open");
-};
-
-// const sr = ScrollReveal({
-//   distance: "65px",
-//   duration: 2600,
-//   delay: 450,
-//   reset: true,
-// });
-
-// sr.reveal("header", { delay: 200, origin: "top" });
-// sr.reveal(".hero-img", { delay: 450, origin: "top" });
-// sr.reveal(".icons", { delay: 500, origin: "left" });
-// sr.reveal(".scroll-down", { delay: 500, origin: "right" });
