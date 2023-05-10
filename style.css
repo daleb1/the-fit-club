@@ -539,7 +539,7 @@ header {
 /* LIGHTBOX END ------------------------------ */
 
 .program3-column2 {
-  width: 35rem;
+  /* width: 35rem; */
   height: 28rem;
   display: grid;
   margin: auto;
@@ -570,14 +570,17 @@ header {
 .check_list {
   padding: 0px;
   font-size: 1rem;
-  line-height: 2.5rem;
 }
-
+.list{
+  line-height: 3rem;
+}
 .check {
   background: url("img/icons/check.png") no-repeat left top;
   padding-left: 50px;
 }
-
+.partners{
+  margin-top: 2rem;
+}
 .partners_row {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -803,7 +806,6 @@ header {
 }
 
 .about-column2 {
-  width: 27rem;
   height: 31rem;
   cursor: pointer;
   margin-top: 7rem;
@@ -830,11 +832,16 @@ header {
 
 .email-shape {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .textarea{
   width: 15rem;
   text-align: center;
+  float: left;
+  border: none;
+  background-color: transparent;
+  outline: none;
 }
 .email-button {
   padding: 9px 20px 9px 20px;
@@ -843,21 +850,12 @@ header {
 }
 
 .shape-container {
-  bottom: 0;
-  right: 0;
   padding: 24px 48px;
-  gap: 120px;
   width: 28rem;
   height: 5rem;
   background: #42474d;
 }
 
-.textarea {
-  float: left;
-  border: none;
-  background-color: transparent;
-  outline: none;
-}
 
 /* FOOTER*/
 #footer {
@@ -1085,116 +1083,148 @@ header {
   .hero-contents {
     max-width: 430px;
   }
-  header{
+  header {
     padding: 0 1rem;
   }
-  .nav-bar.active{
+  .nav-bar.active {
     height: 9rem;
   }
-  .nav-bar ul{
+  .nav-bar ul {
     display: grid;
     gap: 1rem;
   }
-  .row5 {
-    margin-top: 0;
-    display: flex;
-    gap: 0;
-  }
-
   .row2 p {
     font-size: 1.5rem;
+    line-height: 3.5rem;
   }
-  .row3 p{
+  .row3{
     font-size: 1rem;
+    margin: 0;
+    line-height: 2rem;
   }
-  .row5 button{
+  .row4{
+    margin-top: 1.5rem;
+  }
+  .row5 {
+    display: flex;
+    gap: 0;
+  }
+  .row5 button {
     justify-content: center;
-  width: 9.5rem;
-  height: auto;
-  font-size: 1rem;
-  }
-
-  .hero-contents {
-  width: fit-content;
-  height: auto;
-}
-  .programs-container {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .programs-container .program1-row1 {
-    align-items: center;
-    text-align: center;
-  }
-
-  .program1-row1 p {
-    font-size: 3rem;
-  }
-  .program2-row2 {
-    width: 100%;
+    width: 9.5rem;
     height: auto;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 0 2rem;
-  }
-  .program3-row3 {
-    width: 100%;
-    height: auto;
-    display: grid;
-  }
-
-  .program3-column2 {
+    font-size: 1rem;    
     margin-top: 2rem;
   }
-
-  .pricing-row2 .grid {
-    gap: 20px;
+  .hero-contents {
+    width: fit-content;
+    height: auto;
   }
-  .pricing-row2 .grid .box.pricing-column {
-    transform: scale(1);
+  .program1-row1 p {
+    font-size: 1.5rem;    
+    letter-spacing: .5rem;
+    padding-top: 2rem;
+    line-height: 2.5rem;
   }
-  .about-row1 {
+  .program2-row2 {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
   }
-  .about-row2 {
-    text-align: center;
+  .program3-row3 {
+    max-width: 430px;
+    height: auto;
     display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
   }
-  .about-column2{
-    margin: 0;
+  .program3-row3 {
+    width: fit-content;
+    height: auto;
   }
-  .email-shape {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(168.5px, 300px));
+  }  
+  .program3-column1 {
+    width: 22.5rem;
+    height: auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .pexels1{
+    width: 81.5px;
+    height: 312px;
+  }
+  .pexels2{
+    width: 260.5px;
+    height: 148px;
+  }
+  .pexels3{
+    width: 163px;
+    height: 148px;
+  }
+  .pexels4{
+    width: 81.5px;
+    height: 148px;
+  }
+  .program3-column2 {
+    display: grid;    
+    font-size: 1.5rem;
+  }
+  .program3-column2 h4, p{
+    text-align: center;
+  }
+  .program3-column2 p{
+    font-size: 3rem;
+    margin-top: -20px;
+  }
+  .check_list {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .list{
+    line-height: 3rem;
+  }
+  .check {
+    background: url("img/icons/check.png") no-repeat left top;
+    padding-left: 50px;
+  }
+  .partners{
+    display: none;
+  }
+  .pricing-row1 {
     margin: 0 auto;
   }
-  .footer-container-row {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 0;
+  .pricing-row1 p{
+    font-size: 2rem;
+  }
+  .pricing-row1 h5{
+    font-size: .8rem;
+  }
+  .about-column1 h2 {
+    font-size: 3rem;
+    border-bottom: 1px solid #fff;
+  }
+  .about-column1 p{
+    font-size: 1.2rem;
     margin-top: 1rem;
   }
-  .column1{
-    display: flex;
+  .about-column2 img{
+    width: 20rem;
+    height: auto;
   }
-  .column1 p {
-    display: none;
+  .shape-container {
+    width: 20rem;
+  height: 5rem;
+  margin: 0 auto;
+  gap: 0;
   }
-  .footer-column p {
-    display: none;
+  .textarea {
+    width: 10rem;
   }
-  .footer-column h2{
-    font-size: 1rem;
+  .shape-container span, button{
+    font-size: .7rem;
+  }
+  .email-button{
+    padding: 7px;
+  }
+  .footer-column h2 {
+    font-size: .8rem;
   }
 }
