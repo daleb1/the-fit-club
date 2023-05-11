@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -45,131 +45,13 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
-}
-
-/* 'sm': '640px', */
-/* @media (max-width: 640px) {
-  .col-sm-1 {
-    width: 8.333333333333333%;
-  }
-  .col-sm-2 {
-    width: 16.66666666666667%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33333333333333%;
-  }
-  .col-sm-5 {
-    width: 41.66666666666667%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-7 {
-    width: 58.33333333333333%;
-  }
-  .col-sm-8 {
-    width: 66.66666666666666%;
-  }
-  .col-sm-9 {
-    width: 75%;
-  }
-  .col-sm-10 {
-    width: 83.33333333333333%;
-  }
-  .col-sm-11 {
-    width: 91.66666666666666%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
-  .bg-rectangle {
-    display: none;
-  }
-  .bg-rectangle {
-    display: none;
-  }
-  .joinnow-button {
-    display: none;
-  }
-  .bg-circles {
-    display: none;
-  }
-  .bg-eclips {
-    display: none;
-  }
-  .bg-heart {
-    display: none;
-  }
-  .bg-calories {
-    display: none;
-  }
-}
-
-/* 'md': '768px', */
-/* @media (max-width: 768px) {
-  .col-md-1 {
-    width: 8.333333333333333%;
-  }
-  .col-md-2 {
-    width: 16.66666666666667%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33333333333333%;
-  }
-  .col-md-5 {
-    width: 41.66666666666667%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33333333333333%;
-  }
-  .col-md-8 {
-    width: 66.66666666666666%;
-  }
-  .col-md-9 {
-    width: 75%;
-  }
-  .col-md-10 {
-    width: 83.33333333333333%;
-  }
-  .col-md-11 {
-    width: 91.66666666666666%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-  .bg-rectangle {
-    display: none;
-  }
-  .joinnow-button {
-    display: none;
-  }
-  .bg-circles {
-    display: none;
-  }
-  .bg-eclips {
-    display: none;
-  }
-  .bg-heart {
-    display: none;
-  }
-  .bg-calories {
-    display: none;
-  }
 } */
-*/ #background {
+
+#background {
   display: grid;
   height: 100%;
   /* width: 100%; */
-  /* max-width: 1440px; */
+  /* max-width: 1300px; */
   min-height: 100vh;
   position: relative;
   /* display: grid; */
@@ -180,20 +62,28 @@ h6 {
 
 /* NAVBAR | HEADER */
 header {
-  position: fixed;
+  /* position: fixed; */
   right: 0;
   top: 0;
   z-index: 1000;
   width: 100%;
   height: 5rem;
+  background: linear-gradient(260.75deg, #ffac58 -19.54%, #f07800 108.38%);
+}
+
+.header-row {
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 6.25rem;
-  background: linear-gradient(260.75deg, #ffac58 -19.54%, #f07800 108.38%);
-  box-shadow: 0 0 2rem 0.3rem #5a5a5a;
+  margin: auto;
+  height: 100%;
 }
-
+.header-container{
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 100%;
+}
 .logo {
   font-size: 28px;
   font-weight: bold;
@@ -237,26 +127,31 @@ header {
 #hero {
   position: relative;
   background: linear-gradient(186.39deg, #545d63 22.68%, #2e3338 94.97%);
-  margin-top: 72px;
+  /* margin-top: 5rem; */
 }
 
 .hero-container {
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
   padding-top: 2rem;
   padding-left: 1.5rem;
   position: relative;
 }
-
-.bg-rectangle {
+.hero-container::before {
+  content: "";
+  background-image: 
+  url("./img/calories.png"),
+  url("./img/heart-rate.png"),
+  url("./img/Rectangle\ 6939.png"),
+  url("./img/Group\ 13792.png");
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-position: 595px 554px, 1105px 191px, right 0 top 0, 690px -8px;
   position: absolute;
-  left: 65rem;
-  top: 0;
-}
-
-.bg-rectangle img {
-  height: 45rem;
-  width: 25rem;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .bg-eclips {
@@ -266,32 +161,20 @@ header {
   left: 0;
   top: 0;
 }
-
-.bg-circles {
-  position: absolute;
-  width: auto;
-  height: 85%;
-  left: 40rem;
-  top: 0;
-}
-
-.bg-heart {
-  position: absolute;
-  left: 75rem;
-  top: 12rem;
-}
-
-.bg-calories {
-  position: absolute;
-  left: 40rem;
-  top: 30rem;
-}
-
 .hero-contents {
   width: 41rem;
   height: 43rem;
 }
-
+.bg-eclips{
+  width: 599px;
+height: 599px;
+left: -178px;
+top: -221px;
+  background: linear-gradient(306.69deg, #F12D06 16.42%, rgba(240, 120, 0, 0) 90.83%);
+opacity: 0.5;
+filter: blur(300px);
+border-radius: 100px;
+}
 .row1 {
   background: #393d42;
   border-radius: 6.25rem;
@@ -342,7 +225,9 @@ header {
   margin-top: 4rem;
   text-transform: uppercase;
 }
-
+.row4 h2{
+  font-size: 2rem;
+}
 .row4 p {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -392,19 +277,18 @@ header {
 }
 
 .programs-container {
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
 }
-
 .program1-row1 {
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
   line-height: 4.81rem;
   font-size: 3.5rem;
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -602,7 +486,7 @@ header {
 }
 
 .pricing-container {
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -765,7 +649,7 @@ header {
 
 .about-column1 {
   color: #ffffff;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
 }
 
 .about-column1 h5 {
@@ -917,19 +801,10 @@ header {
 
 /* MEDIA QUERY */
 @media (max-width: 1110px) {
-  .bg-rectangle {
-    display: none;
+  .hero-container::before{
+    background-image: none;
   }
-  .bg-circles {
-    display: none;
-  }
-  .bg-eclips {
-    display: none;
-  }
-  .bg-heart {
-    display: none;
-  }
-  .bg-calories {
+  .bg-eclips{
     display: none;
   }
   .joinnow-button {
@@ -951,7 +826,6 @@ header {
     height: 0;
     position: absolute;
     top: 80px;
-    left: 0;
     right: 0;
     width: 100vw;
     background: linear-gradient(260.75deg, #ffac58 -19.54%, #f07800 108.38%);
@@ -960,6 +834,7 @@ header {
   }
   .nav-bar.active {
     height: 2.5rem;
+    z-index: 1000;
   }
   .nav-bar ul {
     display: flex;
@@ -982,9 +857,11 @@ header {
     text-align: center;
     margin: 0 auto;
   }
-
-  .row4 {
-    margin-top: 3rem;
+  .row4{    
+    margin-top: 1.5rem;
+  }
+  .row4 h2, p{
+    font-size: 1.5rem;
   }
   .row5 {
     margin-top: 0;
@@ -1090,6 +967,9 @@ header {
   .nav-bar ul {
     display: grid;
     gap: 1rem;
+  }
+  .nav-bar ul li a {
+    margin-left: auto;
   }
   .row2 p {
     font-size: 1.5rem;

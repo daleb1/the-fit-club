@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Fitclub</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css">    
     <link rel="stylesheet" href="lightbox.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
@@ -19,49 +19,35 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Lato:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="shortcut icon" type="image/png" href="img/logo/Union.png"/>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <div class="logo"><a href="#"><img src="img/logo/Frame 13804.png" alt="Logo" /></a></div>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#programs">Program</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#about">About us</a></li>
-        </ul>
-      </nav>
-      <button class="joinnow-button">Join Now</button>
+      <div class="header-container">
+        <div class="header-row">
+          <div class="logo"><a href="#"><img src="img/logo/Frame 13804.png" alt="Logo" /></a></div>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <nav class="nav-bar">
+            <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#programs">Program</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#about">About us</a></li>
+            </ul>
+          </nav>
+          <button class="joinnow-button">Join Now</button>
+        </div>  
+      </div>          
     </header>
     <main class="container" id="background">
       <section id="hero">
         <div class="hero-container">
           <div class="bg-eclips">
-            <img src="img/Ellipse 51.png" alt="" />
-          </div>
-          <div class="bg-circles">
-            <img src="img/Group 13792.png" alt="" />
-          </div>
-          <div class="bg-rectangle">
-            <img src="img/Rectangle 6939.png" alt="" />
-          </div>
-          <div class="bg-heart">
-            <img src="img/heart-rate.png" alt="" />
-          </div>
-          <div class="bg-calories">
-            <img src="img/calories.png" alt="" />
           </div>
           <div class="hero-contents">
             <div class="row1">
@@ -77,15 +63,15 @@
               </p>
             </div>
             <div class="row4">
-              <div class="row4div">
+              <div>
                 <h2>140+</h2>
                 <p>Expert coaches</p>
               </div>
-              <div class="row4div">
+              <div>
                 <h2>978+</h2>
                 <p>Members joined</p>
               </div>
-              <div class="row4div">
+              <div>
                 <h2>50+</h2>
                 <p>Fitness programs</p>
               </div>
