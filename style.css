@@ -79,7 +79,7 @@ header {
   margin: auto;
   height: 100%;
 }
-.header-container{
+.header-container {
   max-width: 1300px;
   margin: 0 auto;
   height: 100%;
@@ -139,11 +139,8 @@ header {
 }
 .hero-container::before {
   content: "";
-  background-image: 
-  url("./img/calories.png"),
-  url("./img/heart-rate.png"),
-  url("./img/Rectangle\ 6939.png"),
-  url("./img/Group\ 13792.png");
+  background-image: url("./img/calories.png"), url("./img/heart-rate.png"),
+    url("./img/Rectangle\ 6939.png"), url("./img/Group\ 13792.png");
   background-attachment: local;
   background-repeat: no-repeat;
   background-position: 595px 554px, 1105px 191px, right 0 top 0, 690px -8px;
@@ -165,15 +162,19 @@ header {
   width: 41rem;
   height: 43rem;
 }
-.bg-eclips{
+.bg-eclips {
   width: 599px;
-height: 599px;
-left: -178px;
-top: -221px;
-  background: linear-gradient(306.69deg, #F12D06 16.42%, rgba(240, 120, 0, 0) 90.83%);
-opacity: 0.5;
-filter: blur(300px);
-border-radius: 100px;
+  height: 599px;
+  left: -178px;
+  top: -221px;
+  background: linear-gradient(
+    306.69deg,
+    #f12d06 16.42%,
+    rgba(240, 120, 0, 0) 90.83%
+  );
+  opacity: 0.5;
+  filter: blur(300px);
+  border-radius: 100px;
 }
 .row1 {
   background: #393d42;
@@ -225,7 +226,7 @@ border-radius: 100px;
   margin-top: 4rem;
   text-transform: uppercase;
 }
-.row4 h2{
+.row4 h2 {
   font-size: 2rem;
 }
 .row4 p {
@@ -288,7 +289,7 @@ border-radius: 100px;
   font-size: 3.5rem;
   font-weight: 700;
   font-style: normal;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,7 +380,7 @@ border-radius: 100px;
 
 .pexels:hover {
   background: linear-gradient(266.08deg, #ea7f60 -20.56%, #f07800 109.12%);
-  transform: scale(1.1);
+  transform: scale(1);
   transition: 1s ease;
   border: 1px solid white;
 }
@@ -801,10 +802,10 @@ border-radius: 100px;
 
 /* MEDIA QUERY */
 @media (max-width: 1110px) {
-  .hero-container::before{
+  .hero-container::before {
     background-image: none;
   }
-  .bg-eclips{
+  .bg-eclips {
     display: none;
   }
   .joinnow-button {
@@ -857,10 +858,11 @@ border-radius: 100px;
     text-align: center;
     margin: 0 auto;
   }
-  .row4{    
+  .row4 {
     margin-top: 1.5rem;
   }
-  .row4 h2, p{
+  .row4 h2,
+  p {
     font-size: 1.5rem;
   }
   .row5 {
