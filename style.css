@@ -50,11 +50,8 @@ h6 {
 #background {
   display: grid;
   height: 100%;
-  /* width: 100%; */
-  /* max-width: 1300px; */
   min-height: 100vh;
   position: relative;
-  /* display: grid; */
   align-items: center;
   gap: 2rem;
   background: #2e3338;
@@ -103,6 +100,7 @@ header {
   opacity: 0.5;
   border-bottom: 2px solid transparent;
   transition: all 0.55s ease;
+  text-decoration: none;
 }
 .nav-bar ul li a:hover {
   border-bottom: 2px solid #3d0f02;
@@ -113,7 +111,7 @@ header {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   margin-bottom: 0.5rem;
   border-radius: 50px;
   border: 1px solid transparent;
@@ -127,7 +125,6 @@ header {
 #hero {
   position: relative;
   background: linear-gradient(186.39deg, #545d63 22.68%, #2e3338 94.97%);
-  /* margin-top: 5rem; */
 }
 
 .hero-container {
@@ -237,22 +234,21 @@ header {
   display: flex;
   gap: 5rem;
 }
-
 .row5 button {
   color: #ffffff;
   background: transparent;
   border: 1px solid #ea7f60;
   font-size: 1.5rem;
   margin-top: 4.6rem;
-  padding: 1.4rem 1.4rem 1.4rem 1.4rem;
+  padding: 1.4rem;
+  z-index: 10;
 }
-
-.row5 a {
-  color: #ffffff;
-}
-
 .row5 button:hover {
   background: linear-gradient(266.08deg, #ea7f60 -20.56%, #f07800 109.12%);
+}
+.row5 a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /* PROGRAMS ---------------------------*/
@@ -268,7 +264,6 @@ header {
   margin: 3rem auto;
 }
 .card2 {
-  /* width: 19rem; */
   padding: 1rem;
   height: 16rem;
   display: grid;
@@ -423,7 +418,6 @@ header {
 /* LIGHTBOX END ------------------------------ */
 
 .program3-column2 {
-  /* width: 35rem; */
   height: 28rem;
   display: grid;
   margin: auto;
