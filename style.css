@@ -375,7 +375,7 @@ header {
 
 .pexels:hover {
   background: linear-gradient(266.08deg, #ea7f60 -20.56%, #f07800 109.12%);
-  transform: scale(1);
+  transform: scale(1.1);
   transition: 1s ease;
   border: 1px solid white;
 }
@@ -900,7 +900,12 @@ header {
   .program3-column2 {
     margin-top: 2rem;
   }
-
+  .pexels:hover {
+    background: linear-gradient(266.08deg, #ea7f60 -20.56%, #f07800 109.12%);
+    transform: scale(1);
+    transition: 1s ease;
+    border: 1px solid white;
+  }
   .pricing-row2 .grid {
     gap: 20px;
   }
